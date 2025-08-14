@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penempuhan ISC - Wafa Walia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Decorative Elements -->
+    <div class="deco-circle"></div>
+    <div class="deco-circle"></div>
+    <div class="deco-circle"></div>
+    <div class="deco-circle"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <img src="ISC HD POL ASELI.png" alt="Logo" class="logo">
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Beranda</a></li>
+                    <li><a href="#about" class="nav-link">Tentang Saya</a></li>
+                    <li><a href="#portfolio" class="nav-link">Karya Saya</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section home-section">
+            <div class="section-content">
+                <h1 class="home-title">Wafa Walia Manha Sanika Zarin</h1>
+                <p class="home-subtitle">Kelas XI-4</p>
+                <p class="home-description">Ekstrakurikuler Informatic SMASA Community</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="section-content about-container">
+                <div class="about-image">
+                    <div class="photo-frame">
+                        <img src="IMG_0060.JPG" alt="Foto Profil Wafa" class="profile-img">
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h2 class="about-title">Tentang Saya</h2>
+                    <p class="about-text">
+                        Halo semuanya! Namaku Wafa Walia Manha Sanika Zarin. Beberapa orang memanggilku Wafa, aku tidak masalah dipanggil apa saja.
+                        Aku lahir di sebuah kota kecil di Jawa Timur, Indonesia. Sejak kecil, aku sudah dibiasakan untuk mencintai belajar dan selalu ingin tahu tentang hal-hal baru.
+                        Saat usiaku menginjak lima tahun, keluargaku pindah ke Nganjuk, dan aku mulai bersekolah di TK Aisyiyah 1 Nganjuk. Setelah itu, aku melanjutkan pendidikan dasar di SD Aisyiyah 1 Nganjuk.
+                        Di masa SD, aku mengikuti berbagai lomba seperti menyanyi, mendongeng, hingga lomba film pendek tingkat nasional di Semarang.
+                        Lalu aku melanjutkan SMP di Surabaya, pindah ke Mojokerto, dan mengambil program tahfidz Al-Qur’an. Aku juga aktif di paskibraka dan lomba tingkat provinsi.
+                        Saat ini, aku bersekolah di SMAN 1 Nganjuk agar lebih dekat dengan orang tua.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section portfolio-section">
+            <div class="section-content">
+                <h2 class="portfolio-title">Lihat Karya Saya</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <h3>Artikel</h3>
+                        <p>Artikel karya saya yang membahas berbagai hal menarik.</p>
+                        <a href="https://drive.google.com/file/d/10kNQFIY-WgGIPd5w9HX0go_c2ZWsa_TK/view?usp=drive_link" target="_blank" class="portfolio-link">Lihat</a>
+                    </div>
+                    <div class="portfolio-item">
+                        <h3>Short Movie</h3>
+                        <p>Film pendek karya kelompok 1 dengan pesan yang menginspirasi.</p>
+                        <a href="https://drive.google.com/file/d/10kNQFIY-WgGIPd5w9HX0go_c2ZWsa_TK/view?usp=drive_link" target="_blank" class="portfolio-link">Lihat</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
